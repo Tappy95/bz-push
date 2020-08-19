@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bz.push.dao.app.LNoticeReadyDao" >
+	<resultMap type="LNoticeReady" id="BaseMap">
+		<result column="id" property="id" jdbcType="INTEGER"/>
+		<result column="notice_type" property="noticeType" jdbcType="INTEGER"/>
+		<result column="user_id" property="userId" jdbcType="VARCHAR"/>
+		<result column="create_time" property="createTime" jdbcType="INTEGER"/>
+		<result column="account_id" property="accountId" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<select id="selectList" parameterType="int" resultMap="BaseMap">
+	    select *
+	    from bzly.l_notice_ready
+	    where notice_type=#{noticeType}
+	</select>
+</mapper>

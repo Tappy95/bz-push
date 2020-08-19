@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bz-push.iml" filepath="$PROJECT_DIR$/bz-push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push-common/push-common.iml" filepath="$PROJECT_DIR$/push-common/push-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push-interfaces/push-interfaces.iml" filepath="$PROJECT_DIR$/push-interfaces/push-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push-service/push-service.iml" filepath="$PROJECT_DIR$/push-service/push-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push-web/push-web.iml" filepath="$PROJECT_DIR$/push-web/push-web.iml" />
+    </modules>
+  </component>
+</project>

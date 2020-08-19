@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bz.push.dao.user.MUserInfoDao" >
+	<resultMap type="MUserInfo" id="BaseResultMap">
+		<result column="user_id" property="userId" jdbcType="VARCHAR"/>		
+		<result column="user_name" property="userName" jdbcType="VARCHAR"/>		
+		<result column="sex" property="sex" jdbcType="INTEGER"/>		
+		<result column="birthday" property="birthday" jdbcType="VARCHAR"/>		
+		<result column="mobile" property="mobile" jdbcType="VARCHAR"/>		
+		<result column="alias_name" property="aliasName" jdbcType="VARCHAR"/>		
+		<result column="identity" property="identity" jdbcType="VARCHAR"/>		
+		<result column="social_digital_num" property="socialDigitalNum" jdbcType="VARCHAR"/>		
+		<result column="digital_num_type" property="digitalNumType" jdbcType="INTEGER"/>		
+		<result column="profile" property="profile" jdbcType="VARCHAR"/>		
+		<result column="balance" property="balance" jdbcType="DECIMAL"/>		
+		<result column="jade_cabbage" property="jadeCabbage" jdbcType="DECIMAL"/>		
+		<result column="coin" property="coin" jdbcType="INTEGER"/>		
+		<result column="reward" property="reward" jdbcType="DECIMAL"/>		
+		<result column="apprentice" property="apprentice" jdbcType="INTEGER"/>		
+		<result column="qr_code" property="qrCode" jdbcType="VARCHAR"/>		
+		<result column="level" property="level" jdbcType="VARCHAR"/>		
+		<result column="level_value" property="levelValue" jdbcType="INTEGER"/>		
+		<result column="password" property="password" jdbcType="VARCHAR"/>		
+		<result column="create_time" property="createTime" jdbcType="INTEGER"/>		
+		<result column="update_time" property="updateTime" jdbcType="INTEGER"/>		
+		<result column="referrer" property="referrer" jdbcType="VARCHAR"/>		
+		<result column="referrerName" property="referrerName" jdbcType="VARCHAR"/>		
+		<result column="referrerMobile" property="referrerMobile" jdbcType="VARCHAR"/>		
+		<result column="recommended_time" property="recommendedTime" jdbcType="INTEGER"/>		
+		<result column="imei" property="imei" jdbcType="VARCHAR"/>		
+		<result column="equipment_type" property="equipmentType" jdbcType="INTEGER"/>		
+		<result column="pig_coin" property="pigCoin" jdbcType="INTEGER"/>		
+		<result column="registration_id" property="registrationId" jdbcType="VARCHAR"/>		
+		<result column="token" property="token" jdbcType="VARCHAR"/>		
+	</resultMap>
+	<select id="selectOne" parameterType="String" resultMap="BaseResultMap">
+		select *
+		from bzly.m_user_info
+		where user_id = #{userId}
+	</select>
+</mapper>

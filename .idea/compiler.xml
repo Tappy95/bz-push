@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="push-common" />
+        <module name="push-web" />
+        <module name="push-service" />
+        <module name="push-interfaces" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bz-push" target="1.8" />
+      <module name="push-common" target="1.8" />
+      <module name="push-interfaces" target="1.8" />
+      <module name="push-service" target="1.8" />
+      <module name="push-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

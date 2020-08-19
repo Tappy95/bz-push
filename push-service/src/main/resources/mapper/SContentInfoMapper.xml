@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bz.push.dao.content.SContentInfoDao">
+	<resultMap id="BaseResultMap" type="SContentInfo">
+		<result column="id" property="id" jdbcType="INTEGER"/>
+		<result column="message_title" property="messageTitle" jdbcType="VARCHAR"/>
+		<result column="message_model" property="messageModel" jdbcType="VARCHAR"/>
+		<result column="param_caption" property="paramCaption" jdbcType="VARCHAR"/>
+		<result column="send_mode" property="sendMode" jdbcType="INTEGER"/>
+		<result column="is_timing" property="isTiming" jdbcType="INTEGER"/>
+		<result column="timing_time" property="timingTime" jdbcType="TIMESTAMP"/>
+		<result column="is_active" property="isActive" jdbcType="INTEGER"/>
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+		<result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+	</resultMap>
+	
+	<select id="getSContentInfoId" resultMap="BaseResultMap">
+	    SELECT *
+		FROM s_content_info
+		WHERE is_active=1 AND id=#{id}
+	</select>
+
+	<select id="getSContentInfoList" resultMap="BaseResultMap">
+	    SELECT *
+		FROM s_content_info
+		where is_active=1
+	</select>
+	
+</mapper>

@@ -1,0 +1,21 @@
+2020-03-26 16:34:44.258 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2020-03-26 16:34:44.282 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2020-03-26 16:34:44.301 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2020-03-26 16:34:44.328 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2020-03-26 16:34:44.328 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2020-03-26 16:34:44.329 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2020-03-26 16:34:44.330 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2020-03-26 16:34:44.331 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2020-03-26 16:34:44.337 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 12
+2020-03-26 16:34:44.347 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2020-03-26 16:34:44.347 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2020-03-26 16:34:44.351 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9
+2020-03-26 16:36:40.837 [DubboServerHandler-192.168.1.226:31001-thread-2] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==>  Preparing: INSERT INTO s_sms_log(account_num,code,ip,rule_num,send_mode,create_time,remark,status,sms_message_id,is_valid) VALUES (?,?,?,?,?,?,?,?,?,1) 
+2020-03-26 16:36:40.842 [DubboServerHandler-192.168.1.226:31001-thread-2] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==> Parameters: 15312346545(String), 1234(String), 192.168.1.10(String), 10000(String), 1(Integer), 2020-03-26 16:36:40.833(Timestamp), null, 3(Integer), null
+2020-03-26 16:36:40.843 [DubboServerHandler-192.168.1.226:31001-thread-2] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - <==    Updates: 1
+2020-03-26 16:37:23.286 [DubboServerHandler-192.168.1.226:31001-thread-3] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==>  Preparing: INSERT INTO s_sms_log(account_num,code,ip,rule_num,send_mode,create_time,remark,status,sms_message_id,is_valid) VALUES (?,?,?,?,?,?,?,?,?,1) 
+2020-03-26 16:37:23.289 [DubboServerHandler-192.168.1.226:31001-thread-3] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==> Parameters: 15669085249(String), 1234(String), 192.168.1.10(String), 10000(String), 1(Integer), 2020-03-26 16:37:23.285(Timestamp), null, 3(Integer), null
+2020-03-26 16:37:23.290 [DubboServerHandler-192.168.1.226:31001-thread-3] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - <==    Updates: 1
+2020-03-26 16:48:22.647 [DubboServerHandler-192.168.1.226:31001-thread-4] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==>  Preparing: INSERT INTO s_sms_log(account_num,code,ip,rule_num,send_mode,create_time,remark,status,sms_message_id,is_valid) VALUES (?,?,?,?,?,?,?,?,?,1) 
+2020-03-26 16:48:22.648 [DubboServerHandler-192.168.1.226:31001-thread-4] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - ==> Parameters: 15213121554(String), 1234(String), 192.168.1.10(String), 10000(String), 1(Integer), 2020-03-26 16:48:22.619(Timestamp), null, 3(Integer), null
+2020-03-26 16:48:22.650 [DubboServerHandler-192.168.1.226:31001-thread-4] DEBUG com.bz.push.dao.sms.SSmsLogDao.saveSmsLog - <==    Updates: 1

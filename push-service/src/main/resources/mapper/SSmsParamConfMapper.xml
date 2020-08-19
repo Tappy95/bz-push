@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bz.push.dao.sms.SSmsParamConfDao">
+	<resultMap id="BaseResultMap" type="SSmsParamConf">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="name" property="name" jdbcType="VARCHAR"/>
+		<result column="max_value" property="maxValue" jdbcType="VARCHAR"/>
+		<result column="memo" property="memo" jdbcType="VARCHAR"/>
+	</resultMap>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" parameterType="SSmsParamConf">
+		INSERT INTO s_sms_param_conf(name,max_value,memo)
+        VALUE (#{name},#{maxValue},#{memo})
+	</insert>
+
+	<select id="getName" resultMap="BaseResultMap">
+	   SELECT *
+	   FROM s_sms_param_conf
+	   WHERE name=#{name}
+	</select>
+	
+	<select id="getConfList" resultMap="BaseResultMap">
+	   SELECT *
+	   FROM s_sms_param_conf
+	</select>
+	
+	<update id="update" parameterType="SSmsParamConf">
+	   UPDATE s_sms_param_conf
+	   <set>
+        <if test="name != null">
+			name = #{name},
+		</if>
+		<if test="maxValue != null">
+			max_value = #{maxValue},
+		</if>
+		<if test="memo != null">
+			memo = #{memo},
+		</if>
+	   </set>
+	   WHERE id=#{id}
+	</update>
+	
+	<select id="selectOne" parameterType="int" resultMap="BaseResultMap">
+	   SELECT *
+	   FROM s_sms_param_conf
+	   WHERE id=#{id}
+	</select>
+	
+	<select id="selectList" parameterType="SSmsParamConf" resultMap="BaseResultMap">
+	   SELECT *
+	   FROM s_sms_param_conf
+	   <where>
+	      <if test="name !=null and name != ''">
+	         name=#{name}
+	      </if>
+	   </where>
+	</select>
+	
+</mapper>

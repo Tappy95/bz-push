@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+#ZooKeeper
+dubbo:
+  registry:
+    address: 106.53.85.158:2181
+ 
+#Logger
+logging:
+  level:
+    root: INFO
+
+hwy: 
+  callback: https://pushapi.bzlyplay.com/smsStatusReport/hwyReport

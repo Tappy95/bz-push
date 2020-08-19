@@ -1,0 +1,36 @@
+2020-08-19 09:13:16.647 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2020-08-19 09:13:16.673 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2020-08-19 09:13:16.723 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2020-08-19 09:13:16.753 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2020-08-19 09:13:16.753 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2020-08-19 09:13:16.781 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2020-08-19 09:13:16.782 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2020-08-19 09:13:16.782 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2020-08-19 09:13:16.821 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 12
+2020-08-19 09:13:16.980 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2020-08-19 09:13:16.981 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2020-08-19 09:13:17.014 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9
+2020-08-19 10:52:07.301 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2020-08-19 10:52:07.378 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2020-08-19 10:52:07.458 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2020-08-19 10:52:07.496 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2020-08-19 10:52:07.496 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2020-08-19 10:52:07.524 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2020-08-19 10:52:07.525 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2020-08-19 10:52:07.526 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2020-08-19 10:52:07.560 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 12
+2020-08-19 10:52:07.800 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2020-08-19 10:52:07.800 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2020-08-19 10:52:07.834 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9
+2020-08-19 13:48:13.744 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2020-08-19 13:48:13.773 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2020-08-19 13:48:13.832 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2020-08-19 13:48:13.865 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2020-08-19 13:48:13.865 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2020-08-19 13:48:13.896 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2020-08-19 13:48:13.897 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2020-08-19 13:48:13.897 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2020-08-19 13:48:13.935 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 12
+2020-08-19 13:48:14.120 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2020-08-19 13:48:14.121 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2020-08-19 13:48:14.156 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9

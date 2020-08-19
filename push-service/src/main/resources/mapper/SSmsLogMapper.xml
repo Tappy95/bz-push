@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bz.push.dao.sms.SSmsLogDao">
+	<resultMap id="BaseResultMap" type="SSmsLog">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="account_num" property="accountNum" jdbcType="VARCHAR"/>
+		<result column="code" property="code" jdbcType="VARCHAR"/>
+		<result column="ip" property="ip" jdbcType="VARCHAR"/>
+		<result column="rule_num" property="ruleNum" jdbcType="VARCHAR"/>
+		<result column="send_mode" property="sendMode" jdbcType="INTEGER"/>
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+		<result column="remark" property="remark" jdbcType="VARCHAR"/>
+		<result column="status" property="status" jdbcType="INTEGER"/>
+		<result column="sms_message_id" property="smsMessageId" jdbcType="VARCHAR"/>
+		<result column="is_valid" property="isValid" jdbcType="INTEGER"/>
+		<result column="createDate" property="createDate" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<insert id="saveSmsLog" parameterType="SSmsLog">
+	   INSERT INTO s_sms_log(account_num,code,ip,rule_num,send_mode,create_time,remark,status,sms_message_id,is_valid)
+       VALUES (#{accountNum},#{code},#{ip},#{ruleNum},#{sendMode},#{createTime},#{remark},#{status},#{smsMessageId},1)
+	</insert>
+	
+	<select id="getAccountCount" resultType="int">
+	   SELECT COUNT(*)
+	   FROM s_sms_log
+	   WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and account_num=#{accountNum}
+	</select>
+	
+	<select id="getIpCount" resultType="int">
+	   SELECT COUNT(*)
+	   FROM s_sms_log
+	   WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and ip=#{ip}
+	</select>
+	
+	<select id="getAccountRule" resultType="int" parameterType="SSmsLog">
+	   SELECT count(*)
+	   FROM s_sms_log
+	   WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and account_num=#{accountNum} and rule_num=#{ruleNum}
+	   order by create_time desc
+	</select>
+	
+	<select id="getAccountCode" resultMap="BaseResultMap" parameterType="SSmsLog">
+	   SELECT *
+	   FROM s_sms_log
+	   WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and account_num=#{accountNum} and rule_num=#{ruleNum}
+	   order by create_time desc
+	   limit 0,1
+	</select>
+	
+	<select id="getCodeValidate" resultMap="BaseResultMap" parameterType="SSmsLog">
+	   SELECT *
+	   FROM s_sms_log
+	   WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and account_num=#{accountNum} and ip=#{ip} and code=#{code} and rule_num=#{ruleNum}
+	   order by create_time desc
+	   limit 0,1
+	</select>
+
+	<select id="getIpOverrun" resultType="java.lang.String">
+        SELECT ip
+		FROM (SELECT COUNT(*) AS num,ip
+		FROM s_sms_log
+		WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE())
+		GROUP BY ip) a
+		WHERE num>=#{maxValue}
+	</select>
+
+	<select id="getAccountOverrun" resultType="java.lang.String">
+        SELECT accountNum
+		FROM (SELECT COUNT(*) AS num,account_num as accountNum
+		FROM s_sms_log
+		where DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() and account_num not in (select account_num from s_sms_black where type=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) and send_mode=#{sendMode}
+		GROUP BY ip) a
+		WHERE num>=#{maxValue}
+	</select>
+	
+	<select id="selectByMessageId" parameterType="String" resultMap="BaseResultMap">
+		select * from s_sms_log where sms_message_id = #{smsMessageId}
+	</select>
+	
+	<update id="updateStatus" parameterType="SSmsLog">
+		update s_sms_log set status = #{status} ,remark = #{remark} where sms_message_id = #{smsMessageId}
+	</update>
+	
+	<update id="update" parameterType="int">
+	    update s_sms_log
+	    set is_valid=2
+	    where id=#{id}
+	</update>
+	
+	<select id="selectList" parameterType="SSmsLog" resultMap="BaseResultMap">
+	    SELECT id,account_num,code,ip,is_valid,STATUS,DATE_FORMAT(create_time,"%Y-%m-%d %H:%i:%s") AS createDate
+        FROM s_sms_log
+	    <where>
+	       <if test="accountNum != null and accountNum != ''">
+		      and account_num = #{accountNum}
+		   </if>
+	    </where>
+	    order by create_time desc
+	    limit #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="selectCount" parameterType="SSmsLog" resultType="int">
+	    select count(*)
+	    from s_sms_log  
+	    <where>
+	       <if test="accountNum != null and accountNum != ''">
+		      and account_num = #{accountNum}
+		   </if>
+	    </where>
+	</select>
+	
+	<delete id="delete">
+	    delete from s_sms_log where CURDATE()>DATE_FORMAT(create_time,"%Y-%m-%d")
+	</delete>
+	
+	<delete id="deleteById" parameterType="Integer">
+		delete from s_sms_log where id = #{id}
+	</delete>
+</mapper>

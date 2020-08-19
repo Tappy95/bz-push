@@ -1,0 +1,3 @@
+2020-03-27 10:31:52.328 [main] INFO  com.bz.push.WebApp - Starting WebApp on Lee with PID 296292 (F:\micang\code\bz-push\push-web\target\classes started by Administrator in F:\micang\code\bz-push\push-web)
+2020-03-27 10:31:52.338 [main] INFO  com.bz.push.WebApp - The following profiles are active: test
+2020-03-27 10:31:52.462 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19e7a160: startup date [Fri Mar 27 10:31:52 CST 2020]; root of context hierarchy

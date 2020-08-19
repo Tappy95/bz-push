@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bz.push.dao.sms.SSmsBlackDao">
+	<resultMap id="BaseResultMap" type="SSmsBlack">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="account_num" property="accountNum" jdbcType="VARCHAR"/>
+		<result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+		<result column="limit_time" property="limitTime" jdbcType="INTEGER"/>
+		<result column="black_count" property="blackCount" jdbcType="INTEGER"/>
+		<result column="type" property="type" jdbcType="INTEGER"/>
+	</resultMap>
+	
+	<insert id="saveBlack" parameterType="SSmsBlack">
+	   INSERT INTO s_sms_black(account_num,create_time,limit_time)
+       VALUES (#{accountNum},#{createTime},#{limitTime})
+	</insert>
+	
+	<select id="getBlack" resultMap="BaseResultMap">
+	   select *
+	   from s_sms_black
+	   where type=#{type} and account_num in (#{accountNum},#{ip})
+	</select>
+
+	<select id="getBlackList" resultMap="BaseResultMap">
+	   select *
+	   from s_sms_black
+	   where type=0
+	</select>
+	
+	<update id="updateBlackCount" parameterType="SSmsBlack">
+	   UPDATE s_sms_black
+	   SET
+	   create_time=#{createTime},
+	   limit_time=#{limitTime},
+	   black_count=#{blackCount},
+	   type=#{type}
+	   WHERE account_num=#{accountNum}
+	</update>
+	
+	<update id="updateType">
+	   UPDATE s_sms_black
+	   SET type=#{type}
+	   WHERE account_num=#{accountNum}
+	</update>
+
+	<select id="getBlackAccount" resultMap="BaseResultMap">
+	   select *
+	   from s_sms_black
+	   where account_num =#{accountNum}
+	</select>
+
+	<select id="getBlackTimeList" resultMap="BaseResultMap">
+	   select *
+	   from s_sms_black
+	   where limit_time!=0 and type=0
+	</select>
+
+</mapper>

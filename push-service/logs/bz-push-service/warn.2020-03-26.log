@@ -1,0 +1,19 @@
+2020-03-26 16:34:34.356 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:appNoticeServiceImpl:com.bz.push.service.app.AppNoticeService:1.0.1, dubbo version: 2.6.2, current host: 192.168.1.226
+2020-03-26 16:34:34.357 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:SSmsParamConfServiceImpl:com.bz.push.service.sms.SSmsParamConfService:1.0.1, dubbo version: 2.6.2, current host: 192.168.1.226
+2020-03-26 16:34:34.359 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:validateCodeServiceImpl:com.bz.push.service.sms.ValidateCodeService:1.0.1, dubbo version: 2.6.2, current host: 192.168.1.226
+2020-03-26 16:53:27.929 [main-SendThread(127.0.0.1:2181)] WARN  org.apache.zookeeper.ClientCnxn - Session 0x1003e1f24f80000 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1144)
+2020-03-26 16:54:08.045 [Curator-ConnectionStateManager-0] WARN  org.apache.curator.framework.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40001. Adjusted session timeout ms: 40000
+2020-03-26 16:54:08.047 [Curator-ConnectionStateManager-0] WARN  org.apache.curator.framework.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40003. Adjusted session timeout ms: 40000
+2020-03-26 16:54:08.048 [main-EventThread] WARN  org.apache.curator.ConnectionState - Session expired event received
+2020-03-26 16:54:08.048 [Curator-ConnectionStateManager-0] WARN  org.apache.curator.framework.state.ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 40004. Adjusted session timeout ms: 40000
+2020-03-26 16:54:08.064 [main-EventThread] WARN  org.apache.curator.ConnectionState - Session expired event received
+2020-03-26 16:55:38.671 [New I/O worker #1] WARN  com.alibaba.dubbo.remoting.transport.AbstractServer -  [DUBBO] All clients has discontected from /192.168.1.226:31001. You can graceful shutdown now., dubbo version: 2.6.2, current host: 192.168.1.226

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+#ZooKeeper
+dubbo:
+  registry:
+    address: zookeeper:2181
+ 
+#Logger
+logging:
+  level:
+    root: INFO
+
+hwy: 
+  callback: https://tpushapi.baozhu8.com/smsStatusReport/hwyReport

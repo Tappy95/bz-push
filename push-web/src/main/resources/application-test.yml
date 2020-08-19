@@ -1,0 +1,17 @@
+server:
+  port: 10200
+aaa: 
+  bbb: 111
+#ZooKeeper
+dubbo:
+  registry:
+    #address: zk.baozhu8.com:2181
+    address: 106.53.85.158:2181
+ 
+#Logger
+logging:
+  level:
+    root: INFO
+    
+hwy: 
+  callback: http://test.baozhu8.com:18080/smsStatusReport/hwyReport

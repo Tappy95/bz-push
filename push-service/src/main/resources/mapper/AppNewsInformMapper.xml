@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bz.push.dao.app.AppNewsInformDao">
+	<resultMap id="BaseResultMap" type="AppNewsInform">
+		<id column="id" property="id" jdbcType="INTEGER"/>
+		<result column="user_id" property="userId" jdbcType="VARCHAR"/>
+		<result column="mobile" property="mobile" jdbcType="VARCHAR"/>
+		<result column="inform_title" property="informTitle" jdbcType="VARCHAR"/>
+		<result column="inform_content" property="informContent" jdbcType="VARCHAR"/>
+		<result column="push_object" property="pushObject" jdbcType="INTEGER"/>
+		<result column="push_time" property="pushTime" jdbcType="INTEGER"/>
+		<result column="creater_time" property="createrTime" jdbcType="INTEGER"/>
+		<result column="inform_type" property="informType" jdbcType="INTEGER"/>
+		<result column="inform_url" property="informUrl" jdbcType="VARCHAR"/>
+		<result column="is_release" property="isRelease" jdbcType="INTEGER"/>
+		<result column="is_push" property="isPush" jdbcType="INTEGER"/>
+		<result column="push_mode" property="pushMode" jdbcType="INTEGER"/>
+		<result column="add_mode" property="addMode" jdbcType="INTEGER"/>
+	</resultMap>
+	
+	<select id="selectList" resultMap="BaseResultMap">
+	   select *
+	   from bzly.app_news_inform
+	   where is_release=1 and is_push=1 and push_mode=#{pushMode} and push_time between #{beginDate} and #{endDate}
+	</select>
+	
+	<update id="update">
+	   update bzly.app_news_inform 
+		set is_push=2
+		where id = #{id}
+	</update>
+</mapper>

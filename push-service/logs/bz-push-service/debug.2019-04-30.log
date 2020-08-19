@@ -1,0 +1,252 @@
+2019-04-30 10:55:30.240 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2019-04-30 10:55:30.263 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2019-04-30 10:55:30.280 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2019-04-30 10:55:30.290 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2019-04-30 10:55:30.290 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2019-04-30 10:55:30.291 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2019-04-30 10:55:30.291 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2019-04-30 10:55:30.291 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2019-04-30 10:55:30.295 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 11
+2019-04-30 10:55:30.308 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2019-04-30 10:55:30.309 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2019-04-30 10:55:30.312 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9
+2019-04-30 10:56:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 10:56:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 10:56:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 10:56:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 10:56:00.010 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556592840004(Long), 1556592960004(Long)
+2019-04-30 10:56:00.015 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 3
+2019-04-30 10:56:00.016 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==>  Preparing: select * from bzly.m_user_info where user_id = ? 
+2019-04-30 10:56:00.017 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==> Parameters: a133d139315f4f24a880f5f5f592b205(String)
+2019-04-30 10:57:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 10:57:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 10:57:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 10:57:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 10:57:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556592900006(Long), 1556593020006(Long)
+2019-04-30 10:57:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 4
+2019-04-30 10:57:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==>  Preparing: select * from bzly.m_user_info where user_id = ? 
+2019-04-30 10:57:00.013 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==> Parameters: a133d139315f4f24a880f5f5f592b205(String)
+2019-04-30 10:58:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 10:58:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 10:58:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 10:58:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 10:58:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556592960004(Long), 1556593080004(Long)
+2019-04-30 10:58:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 1
+2019-04-30 10:58:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==>  Preparing: select * from bzly.m_user_info where user_id = ? 
+2019-04-30 10:58:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==> Parameters: a133d139315f4f24a880f5f5f592b205(String)
+2019-04-30 10:59:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 10:59:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 10:59:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 10:59:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 10:59:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593020005(Long), 1556593140005(Long)
+2019-04-30 10:59:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:00:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:00:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:00:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:00:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:00:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593080011(Long), 1556593200011(Long)
+2019-04-30 11:00:00.013 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:00:00.056 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:00:00.057 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:00:00.058 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:00:41.795 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==>  Preparing: SELECT * FROM s_content_info where is_active=1 
+2019-04-30 11:00:41.823 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - ==> Parameters: 
+2019-04-30 11:00:41.841 [main] DEBUG com.bz.push.dao.content.SContentInfoDao.getSContentInfoList - <==      Total: 1
+2019-04-30 11:00:41.851 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==>  Preparing: select * from s_sms_black where type=0 
+2019-04-30 11:00:41.851 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - ==> Parameters: 
+2019-04-30 11:00:41.852 [main] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackList - <==      Total: 0
+2019-04-30 11:00:41.852 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==>  Preparing: SELECT * FROM s_sms_param_conf 
+2019-04-30 11:00:41.852 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - ==> Parameters: 
+2019-04-30 11:00:41.856 [main] DEBUG com.bz.push.dao.sms.SSmsParamConfDao.getConfList - <==      Total: 11
+2019-04-30 11:00:41.867 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==>  Preparing: SELECT * FROM s_sms_send_rule 
+2019-04-30 11:00:41.868 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - ==> Parameters: 
+2019-04-30 11:00:41.871 [main] DEBUG com.bz.push.dao.sms.SSmsSendRuleDao.getRuleList - <==      Total: 9
+2019-04-30 11:01:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:01:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:01:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:01:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:01:00.010 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593140004(Long), 1556593260004(Long)
+2019-04-30 11:01:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:02:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:02:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593200002(Long), 1556593320002(Long)
+2019-04-30 11:02:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 1
+2019-04-30 11:02:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==>  Preparing: select * from bzly.m_user_info where user_id = ? 
+2019-04-30 11:02:00.010 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - ==> Parameters: a133d139315f4f24a880f5f5f592b205(String)
+2019-04-30 11:02:00.015 [pool-1-thread-1] DEBUG com.bz.push.dao.user.MUserInfoDao.selectOne - <==      Total: 1
+2019-04-30 11:02:00.438 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.update - ==>  Preparing: update bzly.app_news_inform set is_push=2 where id = ? 
+2019-04-30 11:02:00.439 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.update - ==> Parameters: 103(Integer)
+2019-04-30 11:02:00.440 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.update - <==    Updates: 1
+2019-04-30 11:02:00.441 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:02:00.441 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:02:00.442 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:03:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:03:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:03:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:03:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:03:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593260003(Long), 1556593380003(Long)
+2019-04-30 11:03:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:04:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:04:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593320002(Long), 1556593440002(Long)
+2019-04-30 11:04:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:04:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:04:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:04:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:05:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:05:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593380001(Long), 1556593500001(Long)
+2019-04-30 11:05:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:05:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:05:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:05:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:05:00.016 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:05:00.017 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:05:00.019 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:06:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:06:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593440002(Long), 1556593560002(Long)
+2019-04-30 11:06:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:06:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:06:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:06:00.008 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:07:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:07:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:07:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:07:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:07:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593500003(Long), 1556593620003(Long)
+2019-04-30 11:07:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:08:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:08:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593560002(Long), 1556593680002(Long)
+2019-04-30 11:08:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:08:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:08:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:08:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:09:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:09:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:09:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:09:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:09:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593620003(Long), 1556593740003(Long)
+2019-04-30 11:09:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:10:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:10:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593680001(Long), 1556593800001(Long)
+2019-04-30 11:10:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:10:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:10:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:10:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:10:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:10:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:10:00.013 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:11:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:11:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593740002(Long), 1556593860002(Long)
+2019-04-30 11:11:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:11:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:11:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:11:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:12:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:12:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593800001(Long), 1556593920001(Long)
+2019-04-30 11:12:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:12:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:12:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:12:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:13:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:13:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:13:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:13:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:13:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593860005(Long), 1556593980005(Long)
+2019-04-30 11:13:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:14:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:14:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:14:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:14:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:14:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593920003(Long), 1556594040003(Long)
+2019-04-30 11:14:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:15:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:15:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556593980002(Long), 1556594100002(Long)
+2019-04-30 11:15:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:15:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:15:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:15:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:15:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:15:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:15:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:16:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:16:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594040001(Long), 1556594160001(Long)
+2019-04-30 11:16:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:16:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:16:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:16:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:17:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:17:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:17:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:17:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:17:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594100003(Long), 1556594220003(Long)
+2019-04-30 11:17:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:18:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:18:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594160002(Long), 1556594280002(Long)
+2019-04-30 11:18:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:18:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:18:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:18:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:19:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:19:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594220001(Long), 1556594340001(Long)
+2019-04-30 11:19:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:19:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:19:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:19:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:20:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:20:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594280002(Long), 1556594400002(Long)
+2019-04-30 11:20:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:20:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:20:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:20:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:20:00.011 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:20:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:20:00.014 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:21:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:21:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594340001(Long), 1556594460001(Long)
+2019-04-30 11:21:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:21:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:21:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:21:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:22:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:22:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:22:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:22:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:22:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594400005(Long), 1556594520005(Long)
+2019-04-30 11:22:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:23:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:23:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:23:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:23:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:23:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594460004(Long), 1556594580004(Long)
+2019-04-30 11:23:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:24:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:24:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594520001(Long), 1556594640001(Long)
+2019-04-30 11:24:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:24:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:24:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:24:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:25:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:25:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594580002(Long), 1556594700002(Long)
+2019-04-30 11:25:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:25:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:25:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:25:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:25:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==>  Preparing: SELECT ip FROM (SELECT COUNT(*) AS num,ip FROM s_sms_log WHERE DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE() AND ip NOT IN (SELECT account_num FROM s_sms_black WHERE TYPE=0 OR DATE_FORMAT(create_time,"%Y-%m-%d")=CURDATE()) GROUP BY ip) a WHERE num>=? 
+2019-04-30 11:25:00.012 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - ==> Parameters: 1000(Integer)
+2019-04-30 11:25:00.013 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsLogDao.getIpOverrun - <==      Total: 0
+2019-04-30 11:26:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:26:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:26:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:26:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:26:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594640003(Long), 1556594760003(Long)
+2019-04-30 11:26:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:27:00.002 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:27:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:27:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:27:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:27:00.006 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594700005(Long), 1556594820005(Long)
+2019-04-30 11:27:00.007 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
+2019-04-30 11:28:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==>  Preparing: select * from s_sms_black where limit_time!=0 and type=0 
+2019-04-30 11:28:00.001 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - ==> Parameters: 
+2019-04-30 11:28:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.sms.SSmsBlackDao.getBlackTimeList - <==      Total: 0
+2019-04-30 11:28:00.003 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==>  Preparing: select * from bzly.app_news_inform where user_id!=1 and is_release=1 and is_push=1 and push_mode=? and push_time between ? and ? 
+2019-04-30 11:28:00.004 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - ==> Parameters: 2(Integer), 1556594760003(Long), 1556594880003(Long)
+2019-04-30 11:28:00.005 [pool-1-thread-1] DEBUG com.bz.push.dao.app.AppNewsInformDao.selectList - <==      Total: 0
