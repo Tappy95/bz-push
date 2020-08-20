@@ -2,7 +2,7 @@
 <configuration>
 	<!-- application.properties属性配置-->
 	<springProperty name="app_name" source="spring.application.name" defaultValue="spring" />
-	<springProperty name="level_root" source="logging.level.root" defaultValue="INFO" />
+	<springProperty name="level_root" source="logging.level.root" defaultValue="DEBUG" />
 	<!-- 定义日志文件 输入位置 -->  
     <property name="log_dir" value="logs/bz-push-web" />
     <!-- 日志最大的历史 30天 -->  
@@ -131,19 +131,19 @@
 
 	<!-- 测试环境、开发环境. 多个使用逗号隔开. -->
 	<springProfile name="test,dev">
-		<logger name="com.mz.cloud.security" level="INFO" additivity="false">  
+		<logger name="com.mz.cloud.security" level="DEBUG" additivity="false">
 	        <appender-ref ref="CONSOLE"/> 
 	        <appender-ref ref="INFO-APPENDER"/>  
 		</logger>
-		<logger name="com.mz.cloud.service" level="INFO" additivity="false">  
+		<logger name="com.mz.cloud.service" level="DEBUG" additivity="false">
 	        <appender-ref ref="CONSOLE"/> 
 	        <appender-ref ref="INFO-APPENDER"/>  
 		</logger>
-		<logger name="com.mz.cloud.web" level="INFO" additivity="false">  
+		<logger name="com.mz.cloud.web" level="DEBUG" additivity="false">
 	        <appender-ref ref="CONSOLE"/> 
 	        <appender-ref ref="INFO-APPENDER"/>
 		</logger>
-		<logger name="PAYMENT" level="INFO" additivity="false">  
+		<logger name="PAYMENT" level="DEBUG" additivity="false">
 	        <appender-ref ref="CONSOLE"/>   
 	        <appender-ref ref="PAY-APPENDER"/>
 		</logger>

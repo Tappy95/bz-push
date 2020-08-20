@@ -50,3 +50,44 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
 	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
 	... 3 common frames omitted
+2020-08-20 11:33:09.609 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 13:57:24.865 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 15:31:21.838 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 15:43:37.704 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:37:06.081 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:39:11.333 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:45:05.463 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:48:08.929 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:48:25.339 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:49:01.948 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:51:19.275 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:54:29.259 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 16:56:20.472 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:00:40.764 [DubboClientReconnectTimer-thread-2] WARN  com.alibaba.dubbo.remoting.transport.AbstractClient -  [DUBBO] client reconnect to 192.168.40.1:31001 find error . url: dubbo://192.168.40.1:31001/com.bz.push.service.app.AppNoticeService?anyhost=true&application=bz-push-consumer-web&check=false&codec=dubbo&dubbo=2.6.2&generic=false&heartbeat=60000&interface=com.bz.push.service.app.AppNoticeService&methods=add&pid=27992&register.ip=192.168.40.1&remote.timestamp=1597894462311&revision=1.0.1&side=consumer&timeout=10000&timestamp=1597913783808&version=1.0.1, dubbo version: 2.6.2, current host: 192.168.40.1
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.40.1:31001/com.bz.push.service.app.AppNoticeService?anyhost=true&application=bz-push-consumer-web&check=false&codec=dubbo&dubbo=2.6.2&generic=false&heartbeat=60000&interface=com.bz.push.service.app.AppNoticeService&methods=add&pid=27992&register.ip=192.168.40.1&remote.timestamp=1597894462311&revision=1.0.1&side=consumer&timeout=10000&timestamp=1597913783808&version=1.0.1) failed to connect to server /192.168.40.1:31001, error message is:Connection refused: no further information: /192.168.40.1:31001
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:275)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:156)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.40.1:31001
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:152)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 common frames omitted
+2020-08-20 17:20:12.696 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:21:26.913 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:27:17.936 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:28:20.009 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:38:51.208 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1
+2020-08-20 17:41:40.123 [main] WARN  com.alibaba.dubbo.config.spring.beans.factory.annotation.ServiceAnnotationBeanPostProcessor -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.bz.push], dubbo version: 2.6.2, current host: 192.168.40.1

@@ -43,7 +43,7 @@ public class ValidateCodeController extends BaseController{
 		if(StringUtils.isBlank(channelCode)){
 			result.setData(validateCodeService.sendSmsCode(smsLog,callback));
 		}else {
-			if("wishxiaqiu".equals(channelCode) 
+			if("wishxiaqiu".equals(channelCode)
 					||"xiaqiu".equals(channelCode) 
 					||"xiaqiu2".equals(channelCode) 
 					|| "shua1".equals(channelCode) 

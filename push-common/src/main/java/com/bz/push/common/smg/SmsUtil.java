@@ -10,8 +10,11 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.util.EntityUtils;
 
 import com.alibaba.fastjson.JSON;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SmsUtil {
+    private static final Logger logger = LoggerFactory.getLogger(SmsUtil.class);
 
     /**
      * httpClient:发送http请求的客户端
@@ -26,6 +29,7 @@ public class SmsUtil {
         PoolingHttpClientConnectionManager httpPool = new PoolingHttpClientConnectionManager();// 初始化http连接池
         httpPool.setMaxTotal(200);// 设置连接最大数
         httpClient = HttpClients.custom().setConnectionManager(httpPool).build();// 完成http客户端初始化
+        logger.info("初始化成功");
     }
 
     
@@ -38,6 +42,7 @@ public class SmsUtil {
      * @return 验证码
      */
     public static Boolean sendVariableSms(String mobile,String code) throws Exception {
+        logger.info("宝猪乐园");
     	String msg = "【宝猪乐园】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
     	String params = mobile+","+code;
         // 封装请求参数，并转成json
@@ -45,6 +50,7 @@ public class SmsUtil {
         String requestJson = JSON.toJSONString(requeset);
         // 创建post请求
         HttpPost post = new HttpPost("http://smssh1.253.com/msg/variable/json");
+//        HttpPost post = new HttpPost("http://smssh1.253.com/msg/send/json");
         // 设置请求头
         post.addHeader("Content-Type", "application/json");
         post.addHeader("Charset", "UTF-8");
@@ -70,13 +76,16 @@ public class SmsUtil {
      * @return 验证码
      */
     public static Boolean sendVariableSmsZQ(String mobile,String code) throws Exception {
-    	String msg = "【中青赚点】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
+        logger.debug("中青賺點");
+
+        String msg = "【中青赚点】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
     	String params = mobile+","+code;
     	// 封装请求参数，并转成json
     	SmsVariableRequest requeset = new SmsVariableRequest(ACCOUNT, PWD, msg, params, "true");
     	String requestJson = JSON.toJSONString(requeset);
     	// 创建post请求
     	HttpPost post = new HttpPost("http://smssh1.253.com/msg/variable/json");
+//    	HttpPost post = new HttpPost("http://smssh1.253.com/msg/send/json");
     	// 设置请求头
     	post.addHeader("Content-Type", "application/json");
     	post.addHeader("Charset", "UTF-8");
@@ -87,7 +96,9 @@ public class SmsUtil {
     	String rspText = EntityUtils.toString(httpClient.execute(post).getEntity(), "utf-8");// 发送http请求并获得响应结果
     	SmsVariableResponse responseEntity = JSON.parseObject(rspText, SmsVariableResponse.class);
     	// 根据状态码取得结果
-    	if (!"0".equals(responseEntity.getCode())) {
+        logger.debug(responseEntity.toString());
+
+        if (!"0".equals(responseEntity.getCode())) {
     		return false;
     	}
     	return true;
@@ -102,6 +113,7 @@ public class SmsUtil {
      * @return 验证码
      */
     public static Boolean sendVariableSmsSDM(String mobile,String code) throws Exception {
+        logger.debug("神都盟");
     	String msg = "【神都盟】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
     	String params = mobile+","+code;
     	// 封装请求参数，并转成json
@@ -109,6 +121,7 @@ public class SmsUtil {
     	String requestJson = JSON.toJSONString(requeset);
     	// 创建post请求
     	HttpPost post = new HttpPost("http://smssh1.253.com/msg/variable/json");
+//    	HttpPost post = new HttpPost("http://smssh1.253.com/msg/send/json");
     	// 设置请求头
     	post.addHeader("Content-Type", "application/json");
     	post.addHeader("Charset", "UTF-8");
