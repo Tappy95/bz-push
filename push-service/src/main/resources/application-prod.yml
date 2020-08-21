@@ -1,5 +1,5 @@
 server:
-  port: 6999
+  port: 8081
 spring:
   datasource:
       name: test
