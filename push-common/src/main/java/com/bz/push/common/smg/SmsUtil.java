@@ -43,7 +43,7 @@ public class SmsUtil {
      */
     public static Boolean sendVariableSms(String mobile,String code) throws Exception {
         logger.info("宝猪乐园");
-    	String msg = "【宝猪乐园】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
+    	String msg = "【中青赚点】验证码为：{$var}，5分钟内有效，请勿泄露他人，如非本人操作请忽略。";
     	String params = mobile+","+code;
         // 封装请求参数，并转成json
     	SmsVariableRequest requeset = new SmsVariableRequest(ACCOUNT, PWD, msg, params, "true");
@@ -61,6 +61,7 @@ public class SmsUtil {
         String rspText = EntityUtils.toString(httpClient.execute(post).getEntity(), "utf-8");// 发送http请求并获得响应结果
         SmsVariableResponse responseEntity = JSON.parseObject(rspText, SmsVariableResponse.class);
         // 根据状态码取得结果
+        logger.info(responseEntity.toString());
         if (!"0".equals(responseEntity.getCode())) {
         	return false;
         }

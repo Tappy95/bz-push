@@ -4,7 +4,7 @@ server:
 #ZooKeeper
 dubbo:
   registry:
-    address: 106.53.85.158:2181
+    address: 47.105.131.58:2181
  
 #Logger
 logging:

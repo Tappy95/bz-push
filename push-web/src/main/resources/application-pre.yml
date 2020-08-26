@@ -4,8 +4,8 @@ server:
 #ZooKeeper
 dubbo:
   registry:
-    address: zookeeper:2181
- 
+    address: 47.105.131.58:2181
+
 #Logger
 logging:
   level:
