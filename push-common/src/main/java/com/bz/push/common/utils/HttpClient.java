@@ -21,10 +21,13 @@ import org.apache.http.util.EntityUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.bz.push.common.smg.hwy.HWYSmsResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HttpClient {
 	 //无需修改,用于格式化鉴权头域,给"Authorization"参数赋值
     private static final String AUTH_HEADER_VALUE = "WSSE realm=\"SDP\",profile=\"UsernameToken\",type=\"Appkey\"";
+    private final static Logger logger = LoggerFactory.getLogger(HttpClient.class);
     
 	public static String getUrl(String url){
         String result = "";
@@ -110,7 +113,9 @@ public class HttpClient {
 	                .addHeader("X-WSSE", wsseHeader)
 	                .setEntity(new StringEntity(body)).build());
 	        String resp = EntityUtils.toString(response.getEntity());
+            logger.info(resp);
 	        HWYSmsResponse responseEntity = JSON.parseObject(resp,HWYSmsResponse.class);
+            logger.info(String.valueOf(responseEntity));
 	        if("000000".equals(responseEntity.getCode())){
 	        	return true;
 	        }else {
@@ -130,8 +135,11 @@ public class HttpClient {
 				.addHeader(HttpHeaders.AUTHORIZATION, AUTH_HEADER_VALUE)
 				.addHeader("X-WSSE", wsseHeader)
 				.setEntity(new StringEntity(body)).build());
+		logger.info(response.toString());
 		String resp = EntityUtils.toString(response.getEntity());
+		logger.info(resp);
 		HWYSmsResponse responseEntity = JSON.parseObject(resp,HWYSmsResponse.class);
+		logger.info(resp);
 		if("000000".equals(responseEntity.getCode())){
 			return responseEntity.getResult().get(0).getSmsMsgId();
 		}else {
